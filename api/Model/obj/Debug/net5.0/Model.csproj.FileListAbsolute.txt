@@ -1,0 +1,12 @@
+C:\GitHub\MassiveRock\api\Model\bin\Debug\net5.0\Model.deps.json
+C:\GitHub\MassiveRock\api\Model\bin\Debug\net5.0\Model.dll
+C:\GitHub\MassiveRock\api\Model\bin\Debug\net5.0\ref\Model.dll
+C:\GitHub\MassiveRock\api\Model\bin\Debug\net5.0\Model.pdb
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.dll
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\ref\Model.dll
+C:\GitHub\MassiveRock\api\Model\obj\Debug\net5.0\Model.pdb

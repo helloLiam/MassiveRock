@@ -1,0 +1,38 @@
+.m-login-primarycontainer {
+  //   width: 100%;
+  //   height: 2000px;
+  //   padding-top: 80px;
+  //   padding-left: 100px;
+  //   background-color: #dadada;
+  overflow-y: auto;
+  .m-login-formcontainer {
+    overflow-y: auto;
+    width: 700px;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 320px;
+    padding: 20px 80px 20px 0;
+    border-radius: 39px;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 15px #5e5e5e, -5px -5px 15px #5e5e5e;
+    .m-login-header {
+      text-align: center;
+    }
+    .m-login-form {
+      margin-top: 20px;
+    }
+  }
+  .m-login-formcontainer::-webkit-scrollbar {
+    display: none;/*隐藏滚动条*/
+  }
+}
+
+.m-login-bgi {
+  width: 100%;
+  height: 667px;
+  // margin-top: 40px;
+  background-image: url(../../assets/image/virus.png);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

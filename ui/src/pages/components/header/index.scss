@@ -1,0 +1,36 @@
+.m-header-container {
+  height: 60px;
+  margin-top: 5px;
+  .m-header {
+    width: 800px;
+    height: 60px;
+    display: inline-block;
+    text {
+      margin-top: 20px;
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+    }
+  }
+  .m-referencelink {
+    width: 360px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    right: 130px;
+    img {
+      padding-right: 10px;
+    }
+  }
+  .g-login {
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    button {
+      margin-right: 10px;
+    }
+  }
+}

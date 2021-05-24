@@ -1,0 +1,20 @@
+.m-Blast-container {
+  width: calc(100% - 60px);
+  margin: 20px 0 0 30px;
+}
+.m-search-container {
+  display: flex;
+  width: 1000px;
+  height: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  .m-search-surround {
+    width: 600px;
+    margin-left: 30px;
+  }
+  .m-upload {
+    margin-left: 15px;
+  }
+}
