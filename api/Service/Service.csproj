@@ -5,4 +5,8 @@
     <RootNamespace>Digb.Service</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
 </Project>

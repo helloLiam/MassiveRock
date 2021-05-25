@@ -2389,6 +2389,19 @@
           "bin/placeholder/Entity.dll": {}
         }
       },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
+      },
       "Utility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7918,6 +7931,11 @@
       "path": "../Entity/Entity.csproj",
       "msbuildProject": "../Entity/Entity.csproj"
     },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
+    },
     "Utility/1.0.0": {
       "type": "project",
       "path": "../Utility/Utility.csproj",
@@ -7932,6 +7950,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.6",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Swashbuckle.AspNetCore.SwaggerUI >= 6.1.4",
       "Utility >= 1.0.0"
@@ -7964,6 +7983,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\GitHub\\MassiveRock\\api\\Service\\Service.csproj": {
+              "projectPath": "C:\\GitHub\\MassiveRock\\api\\Service\\Service.csproj"
+            },
             "C:\\GitHub\\MassiveRock\\api\\Utility\\Utility.csproj": {
               "projectPath": "C:\\GitHub\\MassiveRock\\api\\Utility\\Utility.csproj"
             }

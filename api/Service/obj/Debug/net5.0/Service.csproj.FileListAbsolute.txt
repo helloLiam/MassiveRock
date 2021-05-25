@@ -10,3 +10,8 @@ C:\GitHub\MassiveRock\api\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInp
 C:\GitHub\MassiveRock\api\Service\obj\Debug\net5.0\Service.dll
 C:\GitHub\MassiveRock\api\Service\obj\Debug\net5.0\ref\Service.dll
 C:\GitHub\MassiveRock\api\Service\obj\Debug\net5.0\Service.pdb
+C:\GitHub\MassiveRock\api\Service\bin\Debug\net5.0\Entity.dll
+C:\GitHub\MassiveRock\api\Service\bin\Debug\net5.0\Utility.dll
+C:\GitHub\MassiveRock\api\Service\bin\Debug\net5.0\Utility.pdb
+C:\GitHub\MassiveRock\api\Service\bin\Debug\net5.0\Entity.pdb
+C:\GitHub\MassiveRock\api\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
