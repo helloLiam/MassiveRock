@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\MassiveRock\\api\\Entity\\Entity.csproj": {}
+    "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\MassiveRock\\api\\Entity\\Entity.csproj": {
+    "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\MassiveRock\\api\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\GitHub\\MassiveRock\\api\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\MassiveRock\\api\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -22,7 +25,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://powershell.myget.org/F/powershell-core/api/v3/index.json": {},
+          "https://proget.avepoint.net/nuget/AvePoint": {},
+          "https://proget.avepoint.net/nuget/NuGet.org": {}
         },
         "frameworks": {
           "net5.0": {
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2MzgPb/qw23E5caIZVzD6IMy3aAX33pOjsF02j3EOb9j4Q68KdtMTVu9jXGKwKIq+E5pXewwGT4Gh8BzXtOP7Q==",
+  "dgSpecHash": "t3VNHn8BAI89t1uusy/d5eizCYgyW1NC//CFkd1ZWWkA4HIT3KdRMiTekbVrtFT1jAcbpEpetw0+q48tobPl6g==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\MassiveRock\\api\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Entity\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

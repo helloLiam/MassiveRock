@@ -1,4 +1,4 @@
-﻿namespace Digb.Api.Controller
+namespace Digb.Api.Controller
 {
     using System;
     using System.Collections.Generic;
@@ -25,6 +25,13 @@
         {
             return "aa";
         }
+
+        //[HttpGet("blast")]
+        //public String Blast()
+        //{
+        //    new BlastService().SequenceBlast();
+        //    //pairaln(seq1, seq2)
+        //}
 
         /// <summary>
         /// 

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MassiveRockApi</name>
+    </assembly>
+    <members>
+        <member name="T:Digb.Api.Controller.BlastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Digb.Api.Controller.BlastController.Get">
+            <summary>
+            Get 
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

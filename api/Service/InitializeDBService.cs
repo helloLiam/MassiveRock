@@ -1,4 +1,4 @@
-﻿namespace Digb.Service
+namespace Digb.Service
 {
     using Digb.Entity;
     using Digb.Utility;
@@ -14,6 +14,10 @@
         public void InitializeDB(ResourceDBContext context)
         {
             this.InitializeGlobalGermSchedule(context);
+            this.InitializeHouseflySchedule(context);
+            this.InitializeMosquitoesSchedule(context);
+            this.InitializeFruitflySchedule(context);
+            this.InitializeCockroachSchedule(context);
         }
 
         public void InitializeGlobalGermSchedule(ResourceDBContext context)
@@ -24,10 +28,74 @@
                 return;
             }
             // C:\\GitHub\\GlobalGerm\\30_taxonomy_fasta.txt
-            var globalGerms = FastaMapper.GlobalGermMapper("30_taxonomy_fasta");
-            foreach (GlobalGerm g in globalGerms)
+            var globalGermData = FastaMapper.GlobalGermMapper("30_taxonomy_fasta");
+            foreach (var data in globalGermData)
             {
-                context.GlobalGerm.Add(g);
+                context.GlobalGerm.Add(data);
+            }
+            context.SaveChanges();
+        }
+
+        public void InitializeHouseflySchedule(ResourceDBContext context)
+        {
+            if (context.Housefly.Any())
+            {
+                // DB has been seeded
+                return;
+            }
+            // Housefly.txt
+            var houseflyData = FastaMapper.HouseflyMapper("Housefly");
+            foreach (var data in houseflyData)
+            {
+                context.Housefly.Add(data);
+            }
+            context.SaveChanges();
+        }
+
+        public void InitializeMosquitoesSchedule(ResourceDBContext context)
+        {
+            if (context.Mosquitoes.Any())
+            {
+                // DB has been seeded
+                return;
+            }
+            // Mosquitoes.txt
+            var mosquitoesData = FastaMapper.MosquitoesMapper("Mosquitoes");
+            foreach (var data in mosquitoesData)
+            {
+                context.Mosquitoes.Add(data);
+            }
+            context.SaveChanges();
+        }
+
+        public void InitializeFruitflySchedule(ResourceDBContext context)
+        {
+            if (context.Fruitfly.Any())
+            {
+                // DB has been seeded
+                return;
+            }
+            // Fruitfly.txt
+            var fruitflyData = FastaMapper.FruitflyMapper("Fruitfly");
+            foreach (var data in fruitflyData)
+            {
+                context.Fruitfly.Add(data);
+            }
+            context.SaveChanges();
+        }
+
+        public void InitializeCockroachSchedule(ResourceDBContext context)
+        {
+            if (context.Cockroach.Any())
+            {
+                // DB has been seeded
+                return;
+            }
+            // Fruitfly.txt
+            var cockroachData = FastaMapper.CockroachMapper("Cockroach");
+            foreach (var data in cockroachData)
+            {
+                context.Cockroach.Add(data);
             }
             context.SaveChanges();
         }

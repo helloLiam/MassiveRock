@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3AzFKmSd7QAkQYbFduPG0TgvrrcqoOsdqFRWymKei3XO2aLt4qb+SFRVQ+P9E9XpHy+/pq8tdOY9mJU66A2xPQ==",
+  "dgSpecHash": "JAKuXJZ2a861mYfXRI7/Lw0J5cDOeKrv0Nd0jY078BiwJ6hVF8NNPYKq2A8zrnfGBp6vg9k85V7jkS9n9REzeA==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\MassiveRock\\api\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\massive\\MassiveRock\\api\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

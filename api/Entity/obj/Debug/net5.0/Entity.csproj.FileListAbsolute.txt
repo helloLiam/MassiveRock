@@ -10,3 +10,15 @@ C:\GitHub\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.dll
 C:\GitHub\MassiveRock\api\Entity\obj\Debug\net5.0\ref\Entity.dll
 C:\GitHub\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.pdb
 C:\GitHub\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.csprojAssemblyReference.cache
+C:\Users\Administrator\massive\MassiveRock\api\Entity\bin\Debug\net5.0\Entity.deps.json
+C:\Users\Administrator\massive\MassiveRock\api\Entity\bin\Debug\net5.0\Entity.dll
+C:\Users\Administrator\massive\MassiveRock\api\Entity\bin\Debug\net5.0\ref\Entity.dll
+C:\Users\Administrator\massive\MassiveRock\api\Entity\bin\Debug\net5.0\Entity.pdb
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.csprojAssemblyReference.cache
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.dll
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\ref\Entity.dll
+C:\Users\Administrator\massive\MassiveRock\api\Entity\obj\Debug\net5.0\Entity.pdb
