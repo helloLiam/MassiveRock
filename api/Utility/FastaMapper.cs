@@ -156,7 +156,7 @@ namespace Digb.Utility
                     IsPrivate = 0,
                     IsPublished = 0,
                     Wild = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 7]), Double.Parse(arrayData[i + 8]), Double.Parse(arrayData[i + 9]) }),
-                    CD_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 10]), Double.Parse(arrayData[i + 11]), Double.Parse(arrayData[i + 12]) }),
+                    ControlDiet_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 10]), Double.Parse(arrayData[i + 11]), Double.Parse(arrayData[i + 12]) }),
                     HighProtein_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 13]), Double.Parse(arrayData[i + 14]), Double.Parse(arrayData[i + 15]) }),
                     NoProtein_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 16]), Double.Parse(arrayData[i + 17]), Double.Parse(arrayData[i + 18]) }),
                     CD_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 19]), Double.Parse(arrayData[i + 20]), Double.Parse(arrayData[i + 21]) }),

@@ -4,13 +4,18 @@ namespace Digb.Entity
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    public class User
+
+    public class UserProfile
     {
         public Guid Id { get; set; }
 
-        public Guid UserProfileId { get; set; }
+        public Guid ExperimentalId { get; set; }
 
-        public Guid UserInfoId { get; set; }
+        public Int32 UserType { get; set; }
+
+        public String LoginName { get; set; }
+
+        public String Password { get; set; }
 
         public Int32 UserStatus { get; set; }
 

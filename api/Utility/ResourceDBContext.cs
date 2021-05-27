@@ -10,6 +10,14 @@ namespace Digb.Utility
 
     public class ResourceDBContext : DbContext
     {
+        public DbSet<User> User { get; set; }
+
+        public DbSet<UserProfile> UserProfile { get; set; }
+
+        public DbSet<UserInfo> UserInfo { get; set; }
+
+        public DbSet<Experimental> Experimental { get; set; }
+
         public DbSet<GlobalGerm> GlobalGerm { get; set; }
 
         public DbSet<Housefly> Housefly { get; set; }
