@@ -19,8 +19,7 @@ namespace Digb
             //CreateHostBuilder(args).Build().Run();
 
             var host = CreateHostBuilder(args).Build();
-            var data = new FastaMapper().CockroachMapper("Housefly");
-            CreateDbIfNotExists(host);
+            //CreateDbIfNotExists(host);
             host.Run();
         }
 

@@ -30,17 +30,17 @@ namespace Digb.Entity
 
         public Double Wild { get; set; }
 
-        public Double CD_5 { get; set; }
+        public Double ControlDiet_5 { get; set; }
 
-        public Double HighProtein_5 { get; set; }
+        public Double HighProteinDiet_5 { get; set; }
 
-        public Double NoProtein_5 { get; set; }
+        public Double NoProteinDiet_5 { get; set; }
 
-        public Double CD_10 { get; set; }
+        public Double ControlDiet_10 { get; set; }
 
-        public Double HighProtein_10 { get; set; }
+        public Double HighProteinDiet_10 { get; set; }
 
-        public Double NoProtein_10 { get; set; }
+        public Double NoProteinDiet_10 { get; set; }
 
         public DateTime CreatedTime { get; set; }
 

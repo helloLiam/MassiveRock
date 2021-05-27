@@ -157,11 +157,11 @@ namespace Digb.Utility
                     IsPublished = 0,
                     Wild = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 7]), Double.Parse(arrayData[i + 8]), Double.Parse(arrayData[i + 9]) }),
                     ControlDiet_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 10]), Double.Parse(arrayData[i + 11]), Double.Parse(arrayData[i + 12]) }),
-                    HighProtein_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 13]), Double.Parse(arrayData[i + 14]), Double.Parse(arrayData[i + 15]) }),
-                    NoProtein_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 16]), Double.Parse(arrayData[i + 17]), Double.Parse(arrayData[i + 18]) }),
-                    CD_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 19]), Double.Parse(arrayData[i + 20]), Double.Parse(arrayData[i + 21]) }),
-                    HighProtein_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 22]), Double.Parse(arrayData[i + 23]), Double.Parse(arrayData[i + 24]) }),
-                    NoProtein_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 25]), Double.Parse(arrayData[i + 26]), Double.Parse(arrayData[i + 27]) }),
+                    HighProteinDiet_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 13]), Double.Parse(arrayData[i + 14]), Double.Parse(arrayData[i + 15]) }),
+                    NoProteinDiet_5 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 16]), Double.Parse(arrayData[i + 17]), Double.Parse(arrayData[i + 18]) }),
+                    ControlDiet_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 19]), Double.Parse(arrayData[i + 20]), Double.Parse(arrayData[i + 21]) }),
+                    HighProteinDiet_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 22]), Double.Parse(arrayData[i + 23]), Double.Parse(arrayData[i + 24]) }),
+                    NoProteinDiet_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 25]), Double.Parse(arrayData[i + 26]), Double.Parse(arrayData[i + 27]) }),
                     CreatedTime = DateTime.Now,
                     UpdatedTime = DateTime.Now
                 });
