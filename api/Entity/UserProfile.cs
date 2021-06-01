@@ -15,7 +15,7 @@ namespace Digb.Entity
 
         public String LoginName { get; set; }
 
-        public String Password { get; set; }
+        public Byte[] Password { get; set; }
 
         public Int32 UserStatus { get; set; }
 

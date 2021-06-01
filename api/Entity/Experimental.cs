@@ -12,6 +12,10 @@ namespace Digb.Entity
 
         public String Title { get; set; }
 
+        public String GermId { get; set; }
+
+        public String Sequence { get; set; }
+
         public String Biol_Kingdom { get; set; }
 
         public String Biol_Phylum { get; set; }
@@ -30,6 +34,12 @@ namespace Digb.Entity
 
         public Int32 CheckStatus { get; set; }
 
+        public String ExperimentCondition { get; set; }
+
         public Int32 UserStatus { get; set; }
+
+        public DateTime CreatedTime { get; set; }
+
+        public DateTime UpdateTime { get; set; }
     }
 }

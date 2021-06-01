@@ -5,6 +5,7 @@ namespace Digb.Service
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Security.Cryptography;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace Digb.Service
         public FastaMapper FastaMapper { get; set; } = new FastaMapper();
         public void InitializeDB(ResourceDBContext context)
         {
-            this.InitializeGlobalGermSchedule(context);
+            //this.InitializeGlobalGermSchedule(context);
             this.InitializeHouseflySchedule(context);
             this.InitializeMosquitoesSchedule(context);
             this.InitializeFruitflySchedule(context);
@@ -54,11 +55,11 @@ namespace Digb.Service
 
         public void InitializeMosquitoesSchedule(ResourceDBContext context)
         {
-            if (context.Mosquitoes.Any())
-            {
-                // DB has been seeded
-                return;
-            }
+            //if (context.Mosquitoes.Any())
+            //{
+            //    // DB has been seeded
+            //    return;
+            //}
             // Mosquitoes.txt
             var mosquitoesData = FastaMapper.MosquitoesMapper("Mosquitoes");
             foreach (var data in mosquitoesData)
@@ -70,11 +71,11 @@ namespace Digb.Service
 
         public void InitializeFruitflySchedule(ResourceDBContext context)
         {
-            if (context.Fruitfly.Any())
-            {
-                // DB has been seeded
-                return;
-            }
+            //if (context.Fruitfly.Any())
+            //{
+            //    // DB has been seeded
+            //    return;
+            //}
             // Fruitfly.txt
             var fruitflyData = FastaMapper.FruitflyMapper("Fruitfly");
             foreach (var data in fruitflyData)
@@ -86,11 +87,11 @@ namespace Digb.Service
 
         public void InitializeCockroachSchedule(ResourceDBContext context)
         {
-            if (context.Cockroach.Any())
-            {
-                // DB has been seeded
-                return;
-            }
+            //if (context.Cockroach.Any())
+            //{
+            //    // DB has been seeded
+            //    return;
+            //}
             // Fruitfly.txt
             var cockroachData = FastaMapper.CockroachMapper("Cockroach");
             foreach (var data in cockroachData)
@@ -98,6 +99,16 @@ namespace Digb.Service
                 context.Cockroach.Add(data);
             }
             context.SaveChanges();
+        }
+
+        public Byte[] SHA256(String password)
+        {
+            var sha256 = new SHA256Managed();
+            var Asc = new ASCIIEncoding();
+            var tmpByte = Asc.GetBytes(password);
+            var EncryptBytes = sha256.ComputeHash(tmpByte);
+            sha256.Clear();
+            return EncryptBytes;
         }
     }
 }

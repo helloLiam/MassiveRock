@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 import 'antd/dist/antd.css';
 import './index.scss';
 import { Link } from 'react-router-dom';
+import SubMenu from 'antd/lib/menu/SubMenu';
 
 export interface INavBar {
   item?: string;
@@ -53,9 +54,16 @@ export class NavBar extends React.Component<INavBar, INavBar> {
               <Menu.Item key="blast">
                 <Link to="/blast">Blast</Link>
               </Menu.Item>
-              <Menu.Item key="analysis">
-                Expression analysis
-              </Menu.Item>
+              <SubMenu key="analysis" title="Expression analysis">
+                <Menu.ItemGroup>
+                  <Menu.Item key="BySpecies">
+                    <Link to="/analysis/BySpecies">By Species</Link>
+                  </Menu.Item>
+                  <Menu.Item key="ByGerm">
+                    <Link to="/analysis/ByGerm">By Germ</Link>
+                  </Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
               <Menu.Item key="statistics">
                 Statistics
               </Menu.Item>
