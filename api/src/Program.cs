@@ -16,11 +16,11 @@ namespace Digb
     {
         public static void Main(string[] args)
         {
-            //CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
 
-            var host = CreateHostBuilder(args).Build();
+            //var host = CreateHostBuilder(args).Build();
             //CreateDbIfNotExists(host);
-            host.Run();
+            //host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

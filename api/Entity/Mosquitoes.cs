@@ -38,6 +38,6 @@ namespace Digb.Entity
 
         public DateTime CreatedTime { get; set; }
 
-        public DateTime UpdatedTime { get; set; }
+        public DateTime ModifiedTime { get; set; }
     }
 }

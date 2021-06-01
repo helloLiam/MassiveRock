@@ -11,7 +11,7 @@ namespace Digb.Utility
     {
         public List<GlobalGerm> GlobalGermMapper(String filePath)
         {
-            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\GlobalGerm\30_taxonomy_fasta.txt");
+            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\MassiveRock\resources\30_taxonomy_fasta.txt");
             var splitData = fileData.Replace(";", "").Replace("\n", " ").Replace("\t", " ");
             var arrayData = splitData.Split(" ");
             var globalGermData = new List<GlobalGerm>();
@@ -39,7 +39,7 @@ namespace Digb.Utility
 
         public List<Housefly> HouseflyMapper(String filePath)
         {
-            var fileData = System.IO.File.ReadAllText(@"C:\GitLab\tempfile\OTU\Housefly.txt");
+            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\MassiveRock\resources\Housefly.txt");
             var splitData = fileData.Replace("\r\n", " ");
             var arrayData = splitData.Split(" ");
             var houseflyData = new List<Housefly>();
@@ -47,7 +47,7 @@ namespace Digb.Utility
             {
                 houseflyData.Add(new Housefly()
                 {
-                    Id = 000000,
+                    Id = i + 1,
                     Biol_Kingdom = arrayData[i],
                     Biol_Phylum = arrayData[i + 1],
                     Biol_Class = arrayData[i + 2],
@@ -61,7 +61,7 @@ namespace Digb.Utility
                     Contrast_2 = Double.Parse(arrayData[i + 8]),
                     Contrast_3 = Double.Parse(arrayData[i + 9]),
                     CreatedTime = DateTime.Now,
-                    UpdatedTime = DateTime.Now
+                    ModifiedTime = DateTime.Now
                 });
             }
             return houseflyData;
@@ -69,7 +69,7 @@ namespace Digb.Utility
 
         public List<Mosquitoes> MosquitoesMapper(String filePath)
         {
-            var fileData = System.IO.File.ReadAllText(@"C:\GitLab\tempfile\OTU\Mosquitoes.txt");
+            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\MassiveRock\resources\Mosquitoes.txt");
             var splitData = fileData.Replace("\r\n", " ");
             var arrayData = splitData.Split(" ");
             var mosquitoesData = new List<Mosquitoes>();
@@ -77,7 +77,7 @@ namespace Digb.Utility
             {
                 mosquitoesData.Add(new Mosquitoes()
                 {
-                    Id = 000000,
+                    Id = i + 1,
                     Biol_Kingdom = "d__Bacteria",
                     Biol_Phylum = arrayData[i],
                     Biol_Class = arrayData[i + 1],
@@ -92,7 +92,7 @@ namespace Digb.Utility
                     Pupae_Day2 = Double.Parse(arrayData[i + 7]),
                     Adult_Day5 = Double.Parse(arrayData[i + 8]),
                     CreatedTime = DateTime.Now,
-                    UpdatedTime = DateTime.Now
+                    ModifiedTime = DateTime.Now
                 });
             }
             return mosquitoesData;
@@ -100,7 +100,7 @@ namespace Digb.Utility
 
         public List<Fruitfly> FruitflyMapper(String filePath)
         {
-            var fileData = System.IO.File.ReadAllText(@"C:\GitLab\tempfile\OTU\Fruitfly.txt");
+            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\MassiveRock\resources\Fruitfly.txt");
             var splitData = fileData.Replace("\r\n", " ");
             var arrayData = splitData.Split(" ");
             var fruitflyData = new List<Fruitfly>();
@@ -108,7 +108,7 @@ namespace Digb.Utility
             {
                 fruitflyData.Add(new Fruitfly()
                 {
-                    Id = 000000,
+                    Id = i+1,
                     Biol_Kingdom = arrayData[i],
                     Biol_Phylum = arrayData[i+1],
                     Biol_Class = arrayData[i + 2],
@@ -129,7 +129,7 @@ namespace Digb.Utility
                     Kdm5_5 = Double.Parse(arrayData[i + 15]),
                     Kdm5_3 = Double.Parse(arrayData[i + 16]),
                     CreatedTime = DateTime.Now,
-                    UpdatedTime = DateTime.Now
+                    ModifiedTime = DateTime.Now
                 });
             }
             return fruitflyData;
@@ -137,7 +137,7 @@ namespace Digb.Utility
 
         public List<Cockroach> CockroachMapper(String filePath)
         {
-            var fileData = System.IO.File.ReadAllText(@"C:\GitLab\tempfile\OTU\Cockroach.txt");
+            var fileData = System.IO.File.ReadAllText(@"C:\GitHub\MassiveRock\resources\Cockroach.txt");
             var splitData = fileData.Replace("\r\n", " ");
             var arrayData = splitData.Split(" ");
             var cockroachData = new List<Cockroach>();
@@ -145,7 +145,7 @@ namespace Digb.Utility
             {
                 cockroachData.Add(new Cockroach()
                 {
-                    Id = 000000,
+                    Id = i + 1,
                     Biol_Kingdom = arrayData[i],
                     Biol_Phylum = arrayData[i + 1],
                     Biol_Class = arrayData[i + 2],
@@ -163,7 +163,7 @@ namespace Digb.Utility
                     HighProteinDiet_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 22]), Double.Parse(arrayData[i + 23]), Double.Parse(arrayData[i + 24]) }),
                     NoProteinDiet_10 = this.DoubleConversion(new Double[] { Double.Parse(arrayData[i + 25]), Double.Parse(arrayData[i + 26]), Double.Parse(arrayData[i + 27]) }),
                     CreatedTime = DateTime.Now,
-                    UpdatedTime = DateTime.Now
+                    ModifiedTime = DateTime.Now
                 });
             }
             return cockroachData;
