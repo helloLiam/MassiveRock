@@ -35,6 +35,15 @@ namespace Digb
             });
             services.AddDbContext<ResourceDBContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            // CORS
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+            builder =>
+            {
+                builder.WithOrigins(new string[] { "http://localhost:3000" })
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,12 +51,15 @@ namespace Digb
         {
             //if (env.IsDevelopment())
             //{
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MassiveRockApi v1"));
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MassiveRockApi v1"));
             //}
 
             app.UseRouting();
+
+            // must before UseEndpoints and after UseRouting
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 

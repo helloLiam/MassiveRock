@@ -6,6 +6,7 @@ namespace Digb.Api.Controller
     using System.Linq;
     using System.Net;
     using System.Threading.Tasks;
+    using Digb.Model;
     using Digb.Service;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
@@ -22,9 +23,9 @@ namespace Digb.Api.Controller
         /// </summary>
         /// <returns></returns>
         [HttpGet("")]
-        public String Blast(String sequence)
+        public BlastnInfo Blast(String sequence)
         {
-            return new BlastService().SequenceBlast(sequence);
+            return new BlastService().Blastn(sequence);
         }
     }
     //[HttpGet("blast")]

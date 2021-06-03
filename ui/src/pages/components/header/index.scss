@@ -2,7 +2,7 @@
   height: 60px;
   margin-top: 5px;
   .m-header {
-    width: 800px;
+    width: 650px;
     height: 60px;
     display: inline-block;
     text {
@@ -13,7 +13,7 @@
     }
   }
   .m-referencelink {
-    width: 590px;
+    width: 650px;
     height: 60px;
     display: inline-block;
     position: absolute;
@@ -22,15 +22,20 @@
       padding-right: 10px;
     }
   }
-  .g-login {
-    width: 180px;
-    height: 60px;
-    display: inline-block;
-    margin-top: 10px;
+  .c-header-avatar {
     position: absolute;
-    right: 0;
-    button {
-      margin-right: 10px;
-    }
+    top: 15px;
+    right: 15px;
   }
+  // .g-login {
+  //   width: 180px;
+  //   height: 60px;
+  //   display: inline-block;
+  //   margin-top: 10px;
+  //   position: absolute;
+  //   right: 0;
+  //   button {
+  //     margin-right: 10px;
+  //   }
+  // }
 }

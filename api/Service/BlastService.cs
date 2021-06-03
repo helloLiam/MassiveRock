@@ -1,5 +1,6 @@
 namespace Digb.Service
 {
+    using Digb.Model;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -8,9 +9,9 @@ namespace Digb.Service
 
     public class BlastService
     {
-        public String SequenceBlast(String sequence)
+        public BlastnInfo Blastn(String sequence)
         {
-            return "a";
+            return new BlastnInfo { };
         }
 
         //public static String reverse(String s)
