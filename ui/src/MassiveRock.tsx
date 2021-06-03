@@ -6,6 +6,8 @@ import Home from './pages/home';
 import Blast from './pages/blast';
 import Login from './pages/login';
 import Abundance from './pages/abundanceAnalysis';
+import User from './pages/user';
+import GermSearch from './pages/GermSearch';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/blast" component={Blast} />
           <Route path="/analysis/ByGerm" component={Abundance} />
           <Route path="/analysis/BySpecies" component={Abundance} />
+          <Route path="/user" component={User} />
+          <Route path="/search" component={GermSearch} />
           <Redirect to="/login" />
         </Switch>
       </HashRouter>

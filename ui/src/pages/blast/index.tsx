@@ -1,12 +1,11 @@
-/* eslint-disable no-unused-vars */
 import * as React from 'react';
 import {
-  Button, Input, Space, Table, Upload,
+  Input, Space, Table,
 } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
 import './index.scss';
-import PrimaryContainer from '../primarycontainer';
 import IBlast from '../../model/blastModel';
+import { Header } from '../components/header';
+import { NavBar } from '../components/navBar';
 // import StartBlast from '../../utility/startBlast';
 
 export default class Blast extends React.Component<{}, IBlast> {
@@ -156,7 +155,10 @@ export default class Blast extends React.Component<{}, IBlast> {
     const { geneValue } = this.state;
     return (
       <>
-        <PrimaryContainer />
+        <Header />
+        <NavBar
+          item="blast"
+        />
         <div className="m-search-container">
           <Space direction="vertical" className="m-search-surround">
             <Input.Search

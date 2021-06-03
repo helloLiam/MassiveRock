@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import * as React from 'react';
-import { Button, Image } from 'antd';
+import { Avatar, Button, Image } from 'antd';
 import './index.scss';
+import { UserOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 export interface IHeader {
 
@@ -62,7 +64,15 @@ export class Header extends React.Component<{}, {}> {
               Sign up
             </Button>
           </div> */}
+          <Link to="/user">
+            <Avatar
+              className="c-header-avatar"
+              size="large"
+              icon={<UserOutlined />}
+            />
+          </Link>
         </div>
+
       </>
     );
   }

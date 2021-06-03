@@ -8,7 +8,6 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 
 export interface INavBar {
   item?: string;
-  path?: string;
 }
 
 export class NavBar extends React.Component<INavBar, INavBar> {
@@ -16,19 +15,12 @@ export class NavBar extends React.Component<INavBar, INavBar> {
     super(props);
     this.state = {
       item: props.item,
-      path: 'home',
     };
   }
 
   public handleClick = (event: any) => {
     this.setState({ item: event.key });
   };
-
-  public redirectRoute = (path: string) => {
-    this.setState({ path });
-    // this.props.history.push(this.state.path);
-    // console.log(this.state.path);
-  }
 
   public render() {
     const { item } = this.state;
@@ -49,7 +41,7 @@ export class NavBar extends React.Component<INavBar, INavBar> {
                 Browse DB
               </Menu.Item>
               <Menu.Item key="search">
-                Search
+                <Link to="/search">Search</Link>
               </Menu.Item>
               <Menu.Item key="blast">
                 <Link to="/blast">Blast</Link>

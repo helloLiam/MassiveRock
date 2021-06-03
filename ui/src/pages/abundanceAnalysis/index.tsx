@@ -4,8 +4,9 @@ import {
   Button, Input, Space, Table, Upload,
 } from 'antd';
 import './index.scss';
-import PrimaryContainer from '../primarycontainer';
 import IAbundance from '../../model/abundanceModel';
+import { Header } from '../components/header';
+import { NavBar } from '../components/navBar';
 // import StartBlast from '../../utility/startBlast';
 
 export default class Abundance extends React.Component<{}, IAbundance> {
@@ -167,7 +168,10 @@ export default class Abundance extends React.Component<{}, IAbundance> {
     const { speciesValue, germValue } = this.state;
     return (
       <>
-        <PrimaryContainer />
+        <Header />
+        <NavBar
+          item="analysis"
+        />
         <div className="m-search-container">
           <Space direction="vertical" className="m-search-surround">
             <Input.Search

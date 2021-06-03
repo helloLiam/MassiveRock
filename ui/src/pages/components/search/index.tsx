@@ -5,7 +5,8 @@ import './index.scss';
 
 export interface ISearch {
   promptValue: string,
-  operationValue: string
+  operationValue: string,
+  apiSearch: () => void,
 }
 
 export class Search extends React.Component<ISearch, {}> {
@@ -16,13 +17,8 @@ export class Search extends React.Component<ISearch, {}> {
     };
   }
 
-  private StartSearch = (searchKey: string) => {
-    // eslint-disable-next-line no-console
-    console.log(searchKey);
-  }
-
   public render() {
-    const { promptValue, operationValue } = this.props;
+    const { promptValue, operationValue, apiSearch } = this.props;
     return (
       <>
         <div className="g-search-container">
@@ -32,7 +28,7 @@ export class Search extends React.Component<ISearch, {}> {
               allowClear
               enterButton={operationValue}
               size="middle"
-              onSearch={this.StartSearch}
+              onSearch={apiSearch}
             />
           </Space>
         </div>

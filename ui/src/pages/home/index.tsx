@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { Header } from '../components/header';
+import { NavBar } from '../components/navBar';
 import { Search } from '../components/search/index';
-import PrimaryContainer from '../primarycontainer/index';
 import './index.scss';
 
 export default class Home extends React.Component<{}, {}> {
@@ -11,13 +12,21 @@ export default class Home extends React.Component<{}, {}> {
     };
   }
 
+  public StartSearch = () => {
+
+  }
+
   public render() {
     return (
       <>
-        <PrimaryContainer />
+        <Header />
+        <NavBar
+          item="home"
+        />
         <Search
           promptValue="Search a bacterial genus or species"
           operationValue="Search"
+          apiSearch={this.StartSearch}
         />
         <div className="m-home-description">
           <text>
