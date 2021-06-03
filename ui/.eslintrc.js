@@ -40,6 +40,10 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'linebreak-style': [
+      0,
+      'unix',
+    ],
   },
   settings: {
     'import/parsers': {
