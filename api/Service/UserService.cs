@@ -1,13 +1,9 @@
-﻿namespace Digb.Service
+namespace Digb.Service
 {
     using Digb.Model;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    public class UserService
+    public class UserService : IUserService
     {
         public Boolean SignUp(SignUpInfo data)
         {

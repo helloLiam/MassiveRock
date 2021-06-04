@@ -9,7 +9,7 @@ namespace Digb.Service
     using System.Text;
     using System.Threading.Tasks;
 
-    public class InitializeDBService
+    public class InitializeDBService : IInitializeDBService
     {
         public FastaMapper FastaMapper { get; set; } = new FastaMapper();
         public void InitializeDB(ResourceDBContext context)

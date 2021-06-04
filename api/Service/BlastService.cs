@@ -7,7 +7,7 @@ namespace Digb.Service
     using System.Text;
     using System.Threading.Tasks;
 
-    public class BlastService
+    public class BlastService : IBlastService
     {
         public BlastnInfo Blastn(String sequence)
         {

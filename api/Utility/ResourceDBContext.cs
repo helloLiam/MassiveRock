@@ -2,13 +2,8 @@ namespace Digb.Utility
 {
     using Digb.Entity;
     using Microsoft.EntityFrameworkCore;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
 
-
-    public class ResourceDBContext : DbContext
+    public class ResourceDBContext : ResourceBase
     {
         public DbSet<User> User { get; set; }
 
@@ -28,14 +23,9 @@ namespace Digb.Utility
 
         public DbSet<Cockroach> Cockroach { get; set; }
 
-        public ResourceDBContext(DbContextOptions<ResourceDBContext> options) : base(options)
+        public ResourceDBContext(DbContextOptions<ResourceBase> options) : base(options)
         {
 
         }
-
-
-
-
-
     }
 }
