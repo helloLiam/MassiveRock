@@ -1,3 +1,5 @@
+import { UserType } from '../model/userType';
+
 const { globalState } = window as any;
 
 export default class Global {
@@ -10,6 +12,18 @@ export default class Global {
   // }
 
   static get LoginStatus(): boolean {
-    return globalState.loginStatus;
+    return globalState.LoginStatus;
+  }
+
+  static set LoginStatus(value: boolean) {
+    globalState.LoginStatus = value;
+  }
+
+  static get UserType(): UserType {
+    return globalState.UserType;
+  }
+
+  static set UserType(value: UserType) {
+    globalState.UserType = value;
   }
 }
